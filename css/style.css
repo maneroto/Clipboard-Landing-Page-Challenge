@@ -1,0 +1,89 @@
+/* Dependances Start */
+@import url('https://fonts.googleapis.com/css?family=Bai+Jamjuree:400,600&display=swap');
+/* Dependances End */
+
+/* Main CSS Start */
+:root
+{
+    /* Font Size Start */
+    --small-text-size: calc(var(--text-size) * 0.9);
+    --text-size: 2.2vmin;
+    --big-text-size: calc(var(--text-size) * 1.1);
+    --small-title-size: calc(var(--title-size) * 0.6);
+    --title-size: 4vmin;
+    --big-title-size: calc(var(--title-size) * 1.4); 
+    /* Font Size End */
+
+    /* Font Family Start */
+    --text-family: 'Bai Jamjuree', sans-serif;
+    --title-family: 'Bai Jamjuree', sans-serif;
+    /* Font Family End */
+
+    /* Colors Start */
+    --color-primary: hsl(171, 66%, 44%);
+    --color-secondary: hsl(233, 100%, 69%);
+    --color-tertiary: hsl(201, 11%, 66%);
+    --color-accent:  hsl(210, 10%, 33%);
+    --color-contrast: #fff;
+    /* Colors End */
+}
+
+*
+{
+	margin: 0;
+	padding: 0;
+	border: none;
+	outline: none;
+	box-sizing: border-box;
+	text-decoration: inherit;
+	text-transform: inherit;
+	color: inherit;
+	list-style: inherit;
+	font-size: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+}
+
+body
+{
+	font-size: var(--text-size);
+	color: var(--color-accent);
+	list-style: none;
+	font-family: var(--text-family);
+	font-weight: 400;
+	text-decoration: none;
+    text-transform: none;
+}
+
+::-webkit-scrollbar 
+{
+    width: 7px;
+}
+
+::-webkit-scrollbar-track 
+{
+    background: white;
+}
+
+::-webkit-scrollbar-thumb 
+{
+    background: var(--color-secondary);
+    border-radius: 25px;
+}
+
+@media only screen and (max-width: 900px), (orientation: portrait)
+{
+    :root
+    {
+        --text-size: 16px;
+        --title-size: 24px;
+    }
+}
+/* Main CSS End */
+
+/* Footer Start */
+.copyright
+{
+    display: none;
+}
+/* Footer End */
