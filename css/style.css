@@ -71,12 +71,12 @@ body
     border-radius: 25px;
 }
 
-@media only screen and (max-width: 900px), (orientation: portrait)
+@media only screen and (max-width: 480px), (orientation: portrait)
 {
     :root
     {
-        --text-size: 16px;
-        --title-size: 24px;
+        --text-size: 12px;
+        --title-size: 16px;
     }
 }
 
@@ -87,9 +87,57 @@ body
     width: 45%;
 }
 
+.paragraph{
+    color: lightsteelblue;
+    margin-bottom: 3rem;
+}
+
+.small-title {
+    font-size: var(--small-title-size);
+    font-weight: bold;
+    margin-bottom: .6rem;
+}
+
+.small-paragraph {
+    font-size: var(--small-text-size);
+
+}
+
+.btn-blue {
+    background-color: var(--color-primary);
+    color: var(--color-contrast);
+    padding: .7rem 1.5rem;
+    font-size: var(--small-text-size);
+    font-weight: bold;
+    border-radius: 5rem;
+    margin: .2rem .5rem;
+    box-shadow: 0px 3px grey;
+}
+
+.btn-purple {
+    background-color: var(--color-secondary);
+    color: var(--color-contrast);
+    padding: .7rem 1.5rem;
+    font-size: var(--small-text-size);
+    font-weight: bold;
+    border-radius: 5rem;
+    margin: .2rem .5rem;
+    box-shadow: 0px 3px grey;
+}
+
 @media only screen and (max-width: 900px), (orientation: portrait){
     .container-slim{
         width: 80%;
+    } 
+}
+
+@media only screen and (max-width: 480px), (orientation: portrait){
+    .btn-blue {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+    .btn-purple {
+        width: 100%;
     }
 }
 
@@ -102,6 +150,15 @@ header{
     justify-content: center;
     align-items: center;
     height: 70vh;
+    background-image: url('../images/bg-header-desktop.png');
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+}
+
+#logo{
+    width: 12%;
+    margin-bottom: 2.5rem;
 }
 
 .header-content{
@@ -112,11 +169,63 @@ header{
     font-weight: 800;
     margin-bottom: 1rem;
 }
-.header-paragraph{
-    color: grey;
-    margin-bottom: 3rem;
+
+@media only screen and (max-width: 480px), (orientation: portrait){
+    header {
+        height: 90vh;
+        background-image: url('../images/bg-header-mobile.png');
+    }
+    #logo{
+        width: 40%;
+    }
+    .header-paragraph{
+        margin-bottom: 2rem;
+    }
 }
+
 /* Header End */
+
+/* Main Start */
+
+    /* Section 2 */
+.secc02 {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.medium-title{
+    font-size: var(--title-size);
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+    /* Section 3 */
+.secc03{
+    display: flex;
+    flex-wrap: nowrap;
+}
+.computer-container{
+    width: 50%;
+    position: relative;
+}
+
+#computer-img {
+    width: 110%;
+    position: absolute;
+    left: -10%;
+}
+
+.computer-info {
+    width: 50%;
+    padding: 0 20% 0 5rem;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* Main End */
 
 .hidden{
     display: none;
