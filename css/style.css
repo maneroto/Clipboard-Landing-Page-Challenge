@@ -217,18 +217,16 @@ header{
     flex-wrap: nowrap;
     height: auto;
     margin-bottom: 8rem;
-    background-color: olive;
 }
 .computer-container{
     height: auto;
     width: 50%;
     position: relative;
-    background-color: rgb(201, 201, 201);
 }
 
 #computer-img {
     width: 110%;
-    position: absolute;
+    position: relative;
     left: -10%;
 }
 
@@ -238,7 +236,6 @@ header{
     display: flex;
     flex-wrap: wrap;
     align-content: center;
-    background-color: peru;
 }
 
 .computer-info-div{
@@ -300,6 +297,7 @@ header{
     #computer-img{
         width: 100%;
         position: static;
+        margin-bottom: 3rem;
     }
     .computer-info{
         width: 80%;
@@ -308,7 +306,6 @@ header{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        background-color: plum;
     }
     .computer-info-div{
         text-align: center;
@@ -339,6 +336,7 @@ header{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        margin-bottom: 3rem;
     }
     .company-logo{
         width: 50%;
@@ -350,21 +348,22 @@ header{
 
 
 /* Footer Start */
+.footer-container{
+    background-color: rgb(235, 235, 235);
+    width: 100%;
+    height: 25vh;
+    padding: 2rem 0;
+}
 .footer-row {
     display: flex;
     align-content: center;
     flex-wrap: nowrap;
 }
+
 .logo-footer{
-    width: 10%;
-}
+    width: 30%;
 
-footer{
-    background-color: var(--color-tertiary);
-    width: 100%;
-    height: 25vh;
 }
-
 .copyright{
     font-size: var(--small-text-size);
     padding: .2rem 2rem;
