@@ -133,7 +133,7 @@ body
     box-shadow: 0px 3px grey;
 }
 
-@media only screen and (max-width: 900px), (orientation: portrait){
+@media only screen and (max-width: 900px),{
     .container-slim{
         width: 80%;
     } 
@@ -171,11 +171,15 @@ header{
 
 .header-content{
     text-align: center;
+    margin-bottom: 3rem;
 }
 .big-title{
     font-size: var(--big-title-size);
     font-weight: 800;
     margin-bottom: 1rem;
+}
+@media screen (max-width: 640 ){
+
 }
 
 @media only screen and (max-width: 480px), (orientation: portrait){
@@ -190,6 +194,8 @@ header{
         margin-bottom: 2rem;
     }
 }
+
+
 
 /* Header End */
 
@@ -334,12 +340,13 @@ header{
     }
     .company-logos-row{
         display: flex;
+        flex-direction: column;
         flex-wrap: wrap;
         justify-content: center;
         margin-bottom: 3rem;
     }
     .company-logo{
-        width: 50%;
+        width: 25vmin;
         margin-bottom: 3rem;
     }
 }
@@ -351,18 +358,43 @@ header{
 .footer-container{
     background-color: rgb(235, 235, 235);
     width: 100%;
-    height: 25vh;
     padding: 2rem 0;
+    font-size: var(--small-text-size);
+    display: flex;
+    
 }
 .footer-row {
     display: flex;
     align-content: center;
     flex-wrap: nowrap;
 }
-
 .logo-footer{
     width: 30%;
-
+}
+.footer-link-container{
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+}
+.link-column{
+    width: 40%;
+}
+.footer-link{
+    display: block;
+    margin-bottom: 1.5rem;
+    color: grey;
+}
+.social-row{
+    width: auto;
+    height: 100%;
+    margin-left: auto;
+    display: flex;
+    align-content: center;
+}
+.social-icon{
+    scale: 80%;
+    padding: 0 .2rem;
+    margin-bottom: 1.5rem;
 }
 .copyright{
     font-size: var(--small-text-size);
@@ -370,5 +402,35 @@ header{
     background-color: var(--color-primary);
     color: white;
     margin-top: auto;
+}
+
+@media only screen and (max-width: 480px), (orientation: portrait){
+    .footer-container{
+        display: inline-block;
+    }
+    .footer-row{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .logo-footer-container{
+        width: 100%;
+        text-align: center;
+    }
+    .logo-footer{
+        margin: 0 auto;
+        width: 3rem;
+    }
+    .footer-link-container{
+        width: 100%;
+        display: inline-block;
+        text-align: center;
+    }
+    .link-column{
+        margin: 2rem auto;
+    }
+    .social-row{
+        margin: 0 auto;
+    }
 }
 /* Footer End */
